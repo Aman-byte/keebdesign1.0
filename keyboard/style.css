@@ -1,0 +1,45 @@
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+}
+
+.key {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 60px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 0 5px;
+  box-shadow: 1px 1px 3px #ccc;
+  transition: all 0.1s ease-in-out;
+}
+
+.key:hover {
+  background-color: #ddd;
+  transform: translateY(-5px);
+}
+
+.key.special {
+  width: 90px;
+}
+
+#backspace {
+  width: 110px;
+}
+
+#tab, #capslock, #enter, #shiftleft, #shiftright, #ctrlleft, #ctrlright, #winleft, #altleft, #altright {
+  width: 120px;
+}
+
+#space {
+  background-color: #f0f0f0;
+  width: 300px;
+}
